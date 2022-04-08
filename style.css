@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Oswald:wght@500&display=swap');*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    background-color: #0f171e;
+    padding: 1.6rem 4.8rem;
+}
+.logo1{
+    width: 110px;
+    height: 40px;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    padding: 0rem 1.6rem;
+    width: 79rem;
+    height: 5rem;
+}
+.nav2_1{
+    display: flex;
+    list-style: none;
+}
+.nav2_1>li{
+    float: left;
+}
+.nav2_1 li ul{
+    display: none;
+    list-style: none;
+     }
+.nav2_1 li:hover>ul{
+        display: flex;
+    }
+.nav2_1 li a{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 1.7rem;
+    margin: .8rem;   
+    text-decoration: none;
+    color: white;
+}
+.busq{
+    margin: 0 3rem;
+    width: 3rem;
+}
+.perf{
+    border-radius: 50%;
+    width: 4rem;
+}
+.usua{
+    font-size: 2rem;
+    margin: 0 2rem;
+    color: white;
+}
+
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f171e;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1;
+  }
+  
+  ul.slider li:target {
+      opacity: 1;
+  }
+  
+  .menu2{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu2 li{
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 10px;
+  }
+  .menu2 li a{
+    background-color: rgba(240, 248, 255, 0.466);
+    padding: 10px;
+    border-radius: 100%;
+  }
+
+.galeria{
+    background-color: #0f171e;
+    padding: 1.6px;
+}
+.tit{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
+.imagen-principal{
+    padding: 1rem 3rem;
+    background-color: #0f171e;
+}
+.lista-imagenes img{
+    object-fit: cover;
+    margin-right: 10px;
+}
+.lista-imagenes{
+    padding: 0 3rem;
+    display: flex;
+    overflow-y: auto;
+}
+.list2{
+    display: flex;
+    color: #fff;
+}
+.fin{
+    display: flex;
+    justify-content: center;
+    background-color: #0f171e;
+}
+
+
+@media(max-width:600px){
+    .nav1{
+        justify-content: center;
+    }
+
+    .nav2{
+        display: none;
+    }
+    .nav1{
+        display: flex;
+        align-items: center;
+        background-color: #0f171e;
+        padding: 0rem 0rem;
+        margin: 0;
+    }
+    .logo1{
+        
+        width: 80px;
+        height: 30px;
+    }
+    .usua{
+        display: none;
+    }
+
+    ul.slider{
+        height: 100px;
+      }
+
+    ul.slider li {
+        height: 10rem;
+    }
+    ul.slider li img{
+        height: 100px;
+        object-fit: cover;
+      }
+
+}
